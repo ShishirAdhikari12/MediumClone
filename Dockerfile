@@ -51,9 +51,7 @@ COPY --from=frontend /app/public/build ./public/build
 RUN composer dump-autoload --optimize
 
 RUN php artisan package:discover \
-    && php artisan storage:link \
-    && php artisan optimize:clear \
-    && php artisan config:cache
+    && php artisan storage:link 
 
 RUN chown -R www-data:www-data storage bootstrap/cache
 
