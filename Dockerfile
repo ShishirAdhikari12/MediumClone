@@ -23,7 +23,8 @@ RUN apk add --no-cache \
     icu-dev \
     libzip-dev \
     oniguruma-dev \
-    mysql-client
+    mysql-client \
+    postgresql-dev
 
 RUN docker-php-ext-install \
     pdo_mysql \
