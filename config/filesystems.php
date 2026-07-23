@@ -60,6 +60,22 @@ return [
             'report' => false,
         ],
 
+        // 'cloudinary' => [
+        //     'driver' => 'cloudinary',
+
+        //     'cloud' => env('CLOUDINARY_CLOUD_NAME'),
+        //     'key' => env('CLOUDINARY_KEY'),
+        //     'secret' => env('CLOUDINARY_SECRET'),
+
+        //     // Optional but recommended
+        //     'secure' => true,
+        // ],
+
+        'cloudinary' => [
+            'driver' => 'cloudinary',
+            'url' => env('CLOUDINARY_URL'),
+        ],
+
     ],
 
     /*

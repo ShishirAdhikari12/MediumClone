@@ -66,6 +66,7 @@ class User extends Authenticatable implements HasMedia
     {
         $this
             ->addMediaCollection('avatar')
+            ->useDisk('cloudinary')
             ->singleFile();
     }
 

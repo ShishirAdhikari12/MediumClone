@@ -42,6 +42,7 @@ class Post extends Model implements HasMedia
     {
         $this
             ->addMediaCollection('default')
+            ->useDisk('cloudinary')
             ->singleFile();
     }
 
