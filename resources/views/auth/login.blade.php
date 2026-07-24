@@ -6,6 +6,12 @@
         @csrf
 
         <!-- Email Address -->
+        <div class="text-sm text-gray-600 hover:text-gray-900 p-4">
+            <span class="underline">Example Account:</span><br>
+            <span>Email: saaf05565@gmail.com</span><br>
+            <span>Password: saafmediumacc</span>
+        </div>
+        <br>
         <div>
             <x-input-label for="email" :value="__('Email')" />
             <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
